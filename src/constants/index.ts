@@ -21,76 +21,112 @@ export const navLinks = [
   },
 ];
 
-export const myProjects = [];
+export const myProjects = [
+  {
+    title: "REAL ESTATE",
+    desc: "A fullstack web application that simulates a real estate app. This app is build using MERN Stack and allows me to upgrade my skills in the backend world",
+    subdesc: "Allows users to list, favorite and search for their next home.",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/mongo.png",
+      },
+    ],
+    link: "https://github.com/tavares97/REAL_ESTATE",
+  },
+  {
+    title: "Netflix Clone",
+    desc: "An app that replicates the feel and functionality of Netflix",
+    subdesc:
+      "This app is built with the sole propose of developing my skills even further",
+    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+    ],
+    link: "https://github.com/tavares97/netflix-clone",
+  },
+];
 
-export const calculateSizes = (
-  isSmall: boolean,
-  isMobile: boolean,
-  isTablet: boolean
-) => {
+export const calculateSizes = (isSmall: boolean, isMobile: boolean) => {
   return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall
-      ? [4, -5, 0]
+    laptopScale: isSmall ? 0.4 : isMobile ? 0.5 : 0.7,
+    laptopPosition: isSmall
+      ? [0, -1, 0.41]
       : isMobile
-      ? [5, -5, 0]
-      : isTablet
-      ? [5, -5, 0]
-      : [9, -5.5, 0],
-    reactLogoPosition: isSmall
-      ? [3, 4, 0]
-      : isMobile
-      ? [5, 4, 0]
-      : isTablet
-      ? [5, 4, 0]
-      : [12, 3, 0],
-    ringPosition: isSmall
-      ? [-5, 7, 0]
-      : isMobile
-      ? [-10, 10, 0]
-      : isTablet
-      ? [-12, 10, 0]
-      : [-24, 10, 0],
-    targetPosition: isSmall
-      ? [-5, -10, -10]
-      : isMobile
-      ? [-9, -10, -10]
-      : isTablet
-      ? [-11, -7, -10]
-      : [-13, -13, -10],
+      ? [0, -1, 0.41]
+      : [0, -3, 0.41],
   };
 };
 
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Shiji",
+    pos: "Senior Software Engineer",
+    duration: "03/2023 - Present",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
-    animation: "victory",
+      "Led feature upgrades for a reservation management app, boosting performance and user experience by fostering effective backend-QA collaboration. Delivered regular client demos and adhered to top industry coding practices for enhanced reliability and long-term app performance.",
+    animation: "dance1",
+    icon: "/assets/shiji.png",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "XGeeks",
+    pos: "Software Engineer",
+    duration: "06/2022 - 02/2023",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
-    animation: "clapping",
+      "Implemented new features for an internal management tool, enhancing efficiency and usability through close collaboration with the backend team. Maintained high standards for reliability and user satisfaction.",
+    icon: "/assets/xgeek.png",
+    animation: "idle2",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "LEAN BKRY",
+    pos: "Frontend Developer",
+    duration: "07/2021 - 06/2022",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
-    animation: "salute",
+      "Developed and managed multiple websites as a web specialist, using diverse frameworks to consistently exceed client expectations. Translated designs into engaging, user-friendly interfaces.",
+    icon: "/assets/lean.png",
+    animation: "stretching",
+  },
+  {
+    id: 4,
+    name: "Siemens",
+    pos: "Fullstack Developer (INTERN)",
+    duration: "06/2019 - 08/2020",
+    title:
+      "Enhanced the visual appeal and efficiency of a legacy web application, showcasing versatility by transitioning from backend unit testing to a key frontend role.",
+    icon: "/assets/siemens.png",
+    animation: "looking around",
   },
 ];

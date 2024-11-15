@@ -11,6 +11,8 @@ export default {
       },
       fontFamily: {
         start2p: ["Press Start 2P", "system-ui"],
+        suse: ["SUSE", "sans-serif"],
+        vt323: ["VT323", "monospace"],
       },
       colors: {
         black: {
